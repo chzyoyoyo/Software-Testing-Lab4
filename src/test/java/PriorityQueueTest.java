@@ -14,7 +14,7 @@ class PriorityQueueTest {
         return Stream.of(
                 //  new Object[]{ new Integer[][] {{mid, big, small}} },
                 new Object[]{ new Integer[][] {{2, 3, 1}} },
-                new Object[]{ new Integer[][] {{5, 2, 8}} },
+                new Object[]{ new Integer[][] {{5, 8, 2}} },
                 new Object[]{ new Integer[][] {{6, 9, 3}} },
                 new Object[]{ new Integer[][] {{878, 923, 754}} },
                 new Object[]{ new Integer[][] {{22, 58, 13}} }
@@ -69,7 +69,7 @@ class PriorityQueueTest {
             prq1.add("a");
         });
 
-        Exception exception3 = assertThrows(NullPointerException.class, () -> {
+        Exception exception3 = assertThrows(ClassCastException.class, () -> {
             Integer[] arr1 = null;
             Integer[] arr2 = prq.toArray(arr1);
         });
