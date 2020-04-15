@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class priorQueueTest {
+class PriorityQueueTest {
 
     static Stream<Object[]> inputStream(){
         return Stream.of(
