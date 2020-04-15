@@ -69,7 +69,7 @@ class PriorityQueueTest {
             prq1.add("a");
         });
 
-        Exception exception3 = assertThrows(ClassCastException.class, () -> {
+        Exception exception3 = assertThrows(NullPointerException.class, () -> {
             Integer[] arr1 = null;
             Integer[] arr2 = prq.toArray(arr1);
         });
